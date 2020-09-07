@@ -10,3 +10,32 @@ for i in range(1, 16):
 # hex() : 숫자를 16진수 형태의 문자열로 변환
 # bin() : 숫자를 2진수 형태의 문자열로 변환
 # oct() : 숫자를 8진수 형태의 문자열로 변환
+
+
+"""
+# 스터디 해설 
+n = int(input(),16)
+
+for i in range(1, 16):
+    print(format(n,'X')+'*'+format(i,'X')+'='+format(n*i,'X'))
+
+'''
+- 다른진수 > 10진수
+ int('value', 2)   int('value', 8)   int('value', 16)
+
+- 10진수 > 다른진수
+ bin(value), oct(value), hex(value)
+  *  결과는 0b~, 0o~, 0x~ 형태로
+
+- format
+ format(value, 'b')  format(value, 'o')  format(value, 'x')
+ 깔끔하게 (대소문자 지정 가능)
+ #붙이면 0b~ 요런 형태로
+ https://dojang.io/mod/page/view.php?id=2300 참고
+'''
+
+x=int(input(),16)
+
+for i in range(1,16):
+	print(('%X'%x) +'*'+('%X'%i)+'='+('%X'%(x*i)))
+"""

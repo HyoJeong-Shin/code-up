@@ -7,3 +7,13 @@ w, h, b = map(int, input().split())
 byte = (w * h * b) / 8
 mb = byte / (1024**2)
 print('%.2f MB' % mb)
+
+
+'''
+# 스터디 해설
+W,H,B= map(int,input().split())
+
+print('%.2f MB' % (W*H*B/8/1024/1024))
+
+# round() 함수도 반올림 함수. round(x,2)하면 2번째 자리까지 반올림됨. 주로 변수에 사용될 듯?    %.2f는 출력시 주로 사용될 듯?
+'''

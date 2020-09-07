@@ -4,9 +4,21 @@
 # 출력 : 1, 2, 3, 4, 5 ... 를 순서대로 계속 더해 합을 만들어가다가, 입력된 정수와 같거나 커졌을 때, 마지막에 더한 정수를 출력한다.
 
 a = int(input())
-x = 0
+sum = 0
 for i in range(1,a):
-    x += i
-    if(x >= a):
+    sum += i
+    if(sum >= a):
         print(i)
-        exit()
+        break
+
+
+'''
+# 스터디 해설
+a=int(input())
+i=0     #컴퓨터가 더하는 값
+sum=0   #증가시킬 값
+
+while sum<a :   #컴퓨터가 더하는 값이 내가 입력한 값보다 작을 동안
+    i+=1
+    sum+=i
+'''

@@ -13,3 +13,15 @@ while sum < a :
     i += 1
 
 print(sum)
+
+
+'''
+# 스터디 해설
+a = int(input())
+sum = 0
+for i in range(1,a+1) :
+    sum=sum+i
+    if sum>=a :
+        break
+print(sum)
+'''

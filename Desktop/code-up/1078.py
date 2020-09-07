@@ -4,9 +4,21 @@
 # 출력 : 1부터 입력된 수까지 짝수의 합을 출력한다.
 
 a = int(input())
-x = 0 
+sum = 0 
 for i in range(1,a+1):
     if i % 2 == 0 :
-        x += i
+        sum += i
 
-print(x)
+print(sum)
+
+
+'''
+# 스터디 해설
+a = int(input())
+sum = 0
+
+for i in range(0,a+1,2) :
+    sum = sum + i
+
+print(sum)
+'''
