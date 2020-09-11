@@ -29,3 +29,36 @@ for i in range(1, 11):
     for j in range(1, 11):
         print(lst[i][j], end=' ')
     print('')
+
+
+
+'''
+# 스터디 해설
+arr = [[0]*10 for i in range(10)]
+
+for i in range(10):
+    arr[i] = list(map(int,input().split()))
+    
+
+x = 1
+y = 1
+
+while True:
+    if arr[x][y] > 0:
+        break
+    
+    arr[x][y] = 9
+    
+    # 아래쪽보다 오른쪽이 우선 : 오른쪽이 1이 아니면 무조건 오른쪽으로 가고, 오른쪽이 1이면 아래로 감 
+    if arr[x][y+1] == 1:
+        x = x+1
+    elif arr[x][y+1] == 0 or 2:
+        y = y+1
+    
+if arr[x][y] == 2: arr[x][y] = 9    
+
+for i in arr:
+    for j in i:
+        print(j, end=' ')
+    print()
+'''

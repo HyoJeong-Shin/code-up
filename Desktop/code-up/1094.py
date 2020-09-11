@@ -9,3 +9,21 @@ a = input().split()
 
 for i in range(n-1,-1,-1):
     print(a[i], end=' ')
+
+
+'''
+# 스터디 해설 1
+n = int(input())
+a = list(map(int,input().split()))
+a.reverse()     # reverse() : 거꾸로 배열   # 영구적으로 바뀜
+
+print(*a)
+
+
+# 스터디 해설 2
+n=int(input())
+numbers=list(map(int,input().split()))
+
+for i in reversed(numbers):     # 일회성으로 바뀜 # for문 안에서만 거꾸로 배열됨
+    print(i, end=' ')
+'''

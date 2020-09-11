@@ -7,14 +7,13 @@
 
 n = int(input())
 
-lst = [[0 for col in range (20)] for row in range(20)]
+lst = [[0 for col in range (19)] for row in range(19)]
 
 for i in range(n):
     x,y = map(int,input().split())
-    lst[x][y] = 1
+    lst[x-1][y-1] = 1
 
-for i in range(1,20):
-    for j in range(1,20):
+for i in range(19):
+    for j in range(19):
         print(lst[i][j], end=' ')
     print('')
-

@@ -13,3 +13,11 @@ for i in range(0,n):
         mn = int(a[i])
 
 print(mn)
+
+'''
+# 스터디 해설
+n = int(input())
+a = list(map(int,input().split()))
+
+print(min(a))   # 최솟값 함수
+'''

@@ -6,13 +6,31 @@
 
 n = int(input())
 a = input().split()
-lst = []
-
-for i in range(1, 24):
-    lst.append(0)
+lst = [0 for i in range(1,24)]
 
 for i in range(n):
     lst[int(a[i]) - 1 ] += 1 
 
 for i in range(23):
     print(lst[i], end=' ') 
+
+
+'''
+# 스터디 풀이 1
+n = int(input())
+arr = list(map(int, input().split()))
+
+for i in range(1,24):
+    print(arr.count(i))     # count()함수 : 배열 안에 i가 몇개 있는지 세어 줌
+
+
+# 스터디 풀이 2
+n = int(input())
+a = list(map(int,input().split()))
+arr = [0 for _ in range(23)]
+
+for r in a :
+    arr[r-1] += 1
+
+print(*arr) #unpacking  --> * : 따옴표, 리스트 벗긴 채 출력 (띄어쓰기 포함 한 줄 출력)
+'''
